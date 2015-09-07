@@ -7,11 +7,27 @@
 <title>Send announcements to users</title>
 </head>
 <body>
-	Enter message to send to all users:
+	<h3>Enter message to send to all users:</h3>
 	<br>
 	<form action="/plugins/announcements/status" method="POST">
-		<textarea rows="5" cols="30" name="message"></textarea>
-		<br> <input type="submit" value="submit">
+		<label>Server IP</label><br> 
+		<input type="text" name="serverIp"> <br>
+		
+		<label>Server name</label><br> 
+		<input type="text" name="serverName"> <br>
+		
+		<label>Sender username</label><br> 
+		<input type="text" name="senderUsername"> <br>
+		
+		<label>Sender password</label><br> 
+		<input type="text" name="senderPassword"> <br>
+		
+		<br>
+		
+		<label>Text of the message</label><br>
+		<textarea rows="5" cols="30" name="message"></textarea><br>
+		
+		 <input type="submit" value="submit">
 	</form>
 </body>
 </html>
