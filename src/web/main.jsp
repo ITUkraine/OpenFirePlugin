@@ -10,17 +10,11 @@
 	<h3>Enter message to send to all users:</h3>
 	<br>
 	<form action="/plugins/announcements/status" method="POST">
-		<label>Server IP</label><br> 
-		<input type="text" name="serverIp"> <br>
-		
-		<label>Server name</label><br> 
-		<input type="text" name="serverName"> <br>
-		
 		<label>Sender username</label><br> 
 		<input type="text" name="senderUsername"> <br>
 		
 		<label>Sender password</label><br> 
-		<input type="text" name="senderPassword"> <br>
+		<input type="password" name="senderPassword"> <br>
 		
 		<br>
 		

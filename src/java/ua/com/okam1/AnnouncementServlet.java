@@ -40,8 +40,8 @@ public class AnnouncementServlet extends HttpServlet {
 		String messageBody = request.getParameter("message");
 		senderUsername = request.getParameter("senderUsername");
 		senderPassword = request.getParameter("senderPassword");
-		serverIP = request.getParameter("serverIp");
-		serverName = request.getParameter("serverName");
+		serverIP = "192.168.1.35";
+		serverName = "pc";
 
 		ConnectionConfiguration connConfig = new ConnectionConfiguration(serverIP, 5222);
 		XMPPConnection connection = new XMPPConnection(connConfig);
