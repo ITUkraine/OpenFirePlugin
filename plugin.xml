@@ -4,12 +4,12 @@
 	<!-- Main plugin class -->
     <class>ua.com.okam1.AnnouncementPlugin</class>
     <name>Announcement Service</name>
-    <description>Send announcements to users.</description>
+    <description>Send announcements to users in network</description>
     <author>Volodya Chornenkiy</author>
     <version>1.0.0</version>
-    <date>8/6/2011</date>
+    <date>6/9/2015</date>
     <minServerVersion>3.7.0</minServerVersion>
-	<url>https://github.com/amiadogroup/onlineUsersPlugin</url>
+	<url>https://github.com/okam1/AnnouncementPlugin</url>
 	<license>gpl</license>
 	
 	<!-- Admin console entries -->
