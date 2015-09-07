@@ -7,5 +7,7 @@
 	<classpathentry kind="lib" path="lib/openfire.jar"/>
 	<classpathentry kind="lib" path="lib/rest-api.jar"/>
 	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/git/AnnouncementPlugin/lib/smack.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/git/AnnouncementPlugin/lib/smackx.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
