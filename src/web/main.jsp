@@ -7,8 +7,11 @@
 <title>Send announcements to users</title>
 </head>
 <body>
-	test
+	Enter message to send to all users:
 	<br>
-	<a href="/plugins/announcements/status">go to servlet</a>
+	<form action="/plugins/announcements/status" method="POST">
+		<textarea rows="5" cols="30" name="message"></textarea>
+		<br> <input type="submit" value="submit">
+	</form>
 </body>
 </html>
