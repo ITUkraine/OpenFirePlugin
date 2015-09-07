@@ -9,6 +9,6 @@
 <body>
 	test
 	<br>
-	<a href="/plugins/announcementplugin/test.jsp">go to test</a>
+	<a href="/plugins/announcements/status">go to servlet</a>
 </body>
 </html>
