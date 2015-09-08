@@ -31,6 +31,16 @@ public class AnnouncementServlet extends HttpServlet {
 		super.init(servletConfig);
 		// Exclude this servlet from requering the user to login
 		AuthCheckFilter.addExclude("status");
+
+		// Retrieve server properites
+		InetAddress ip;
+		try {
+			ip = InetAddress.getLocalHost();
+			serverIP = ip.getHostAddress();
+			serverName = ip.getHostName();
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -40,8 +50,6 @@ public class AnnouncementServlet extends HttpServlet {
 		String messageBody = request.getParameter("message");
 		senderUsername = request.getParameter("senderUsername");
 		senderPassword = request.getParameter("senderPassword");
-		serverIP = "192.168.1.35";
-		serverName = "pc";
 
 		ConnectionConfiguration connConfig = new ConnectionConfiguration(serverIP, 5222);
 		XMPPConnection connection = new XMPPConnection(connConfig);
